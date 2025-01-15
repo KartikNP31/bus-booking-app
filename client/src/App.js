@@ -22,7 +22,7 @@ function App() {
             <Route path='/' element={<Navigate to="/SearchBus" />} />
             <Route path='/SearchBus' element={<SearchBus />} />
             <Route path="/AdminDashboard" element={<AdminDashboard />}>
-              <Route path='/AdminDashboard' element={<Navigate to="/AdminDashboard/Home" />} />
+              <Route path='/AdminDashboard' element={<Navigate to="/AdminDashboard/AddNewBus" />} />
               <Route path="/AdminDashboard/AddNewBus" element={<AddNewBus />} />
             </Route>
 
