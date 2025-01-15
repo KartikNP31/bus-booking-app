@@ -29,7 +29,7 @@ class UserActions {
       const tripsResult = await BusTrip.find({ source, destination, trip_date: date }).populate('bus_id');
 
       if (busResults.length === 0) {
-        return { error: true, message: "No Buses available on this route", status: 404 };
+        return { error: true, message: "No Buses available on this route", status: 400 };
       }
 
       return { error: false, message: 'Buses fetched successfully', status: 200, data: { busResults, tripsResult } };

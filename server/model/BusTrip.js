@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const busTripSchema = new mongoose.Schema({
   bus_id :{
     type : mongoose.Schema.Types.ObjectId,
-    ref : 'Bustrips',
+    ref : 'Bus',
     required : true,
   },
   source: {

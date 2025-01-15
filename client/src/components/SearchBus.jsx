@@ -3,7 +3,6 @@ import {
   FaBus,
   FaCalendarAlt,
   FaExchangeAlt,
-  FaInbox,
   FaPen,
 } from "react-icons/fa";
 import Select from "react-select";
@@ -63,6 +62,9 @@ const SearchBus = () => {
       toast.success(response.message);
       setPNRDetails(response.data);
       setBusResults([]);
+      setSelectedSource("");
+      setSelectedDest("");
+      setDate("");
     } catch (error) {}
   };
 
