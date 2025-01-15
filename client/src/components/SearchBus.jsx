@@ -54,7 +54,7 @@ const SearchBus = () => {
         PNR: PNR,
       };
       const response = await UserServices.getPNR(query);
-      console.log("🚀 ~ handleGetPNR ~ response:", response);
+      // console.log("🚀 ~ handleGetPNR ~ response:", response);
       if (response.error) {
         toast.error(response.message);
         throw new Error(response.message);

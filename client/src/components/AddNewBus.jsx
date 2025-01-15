@@ -22,8 +22,8 @@ const initialBusDetails = {
 
 const AddNewBus = () => {
   const [busDetails, setBusDetails] = useState(initialBusDetails);
-
   const [trips, setTrips] = useState([initialTrip]);
+
 
   const handleBusDetailsChange = (e) => {
     const { name, value } = e.target;
@@ -51,7 +51,7 @@ const AddNewBus = () => {
 
     try{
       const response = await AdminServices.postAddNewBus(data);
-      console.log("🚀 ~ handleAddBus ~ response:", response)
+      // console.log("🚀 ~ handleAddBus ~ response:", response)
       if(!response){
         toast.error(response.message);
         throw new Error(response.error);

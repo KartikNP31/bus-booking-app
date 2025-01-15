@@ -11,7 +11,7 @@ const SearchResult = ({ busResults, tripsResult, source, destination, date, hand
   
   const getBusTrip = (busId) => {
     const trip = tripsResult.find((trip) => trip.bus_id._id === busId);
-    console.log("🚀 ~ getBusTrip ~ trip:", trip)
+    // console.log("🚀 ~ getBusTrip ~ trip:", trip)
     return trip;
   };
 

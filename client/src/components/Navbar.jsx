@@ -14,12 +14,6 @@ const Navbar = () => {
       </Link>
 
       <Link
-        to="/Authentication"
-        className="text-white hover:text-gray-700 hover:bg-gray-300 px-4 py-2 rounded font-semibold"
-      >
-        Sign In
-      </Link>
-      <Link
         to="/AdminDashboard"
         className="text-white hover:text-gray-700 hover:bg-gray-300 px-4 py-2 rounded font-semibold"
       >
