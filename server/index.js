@@ -10,7 +10,7 @@ dbConnection();
 
 // app.use(cors());
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://bus-booking-app-client.vercel.app',
   credentials: true,
 }));
 
